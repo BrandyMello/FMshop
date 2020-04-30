@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
+import Frame from '../Frame/Frame'
 
 class App extends Component {
   constructor() {
@@ -8,7 +9,7 @@ class App extends Component {
 
   render() {
     return (
-      <h1>Farmers' Market Shop</h1>
+      <Frame />
     )
   }
 }
