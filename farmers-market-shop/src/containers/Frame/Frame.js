@@ -8,11 +8,21 @@ import '../App/App.scss';
 const Frame = () => {
   
     return (
-      <header>
-        <img src={ Logo } alt='' className='logo'/>
-        <h1>Farmers' Market Shop</h1>
-        <p>Apparently we had reached a great h</p>
-      </header>
+      <>
+        <header>
+          <img src={ Logo } alt='' className='logo'/>
+          <h1>Farmers' Market Shop</h1>
+          <form>
+            <input type='text'/>
+            {/* <img /> */}
+          </form>
+        </header>
+        <nav>
+          <h3>Wholesale</h3>
+          <h3>Shop</h3>
+          <h3>Farm Login</h3>
+        </nav>
+      </>
     );
 }
 
