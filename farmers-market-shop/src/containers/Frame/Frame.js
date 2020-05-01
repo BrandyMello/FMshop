@@ -3,6 +3,7 @@ import Logo from "../../assets/FarmersMarketShopLogo-Beet1.jpeg";
 import "./Frame.scss";
 import '../App/App.scss';
 import { GoSearch } from "react-icons/go";
+import { MdCopyright } from 'react-icons/md';
 
 
 
@@ -23,6 +24,9 @@ const Frame = () => {
           <h3>Shop</h3>
           <h3>Farm Login</h3>
         </nav>
+        <footer>
+          <p><MdCopyright />VelvetPlaidProductions</p>
+        </footer>
       </>
     );
 }

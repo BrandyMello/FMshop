@@ -16,8 +16,11 @@ nav {
 
 h1 {
   font-family: 'Nova Square', cursive;
+  font-size: 3em;
   margin-left: 20%;
   align-self: center;
+  width: 42%;
+  text-align: center;
 }
 
 .logo {
@@ -38,6 +41,12 @@ h1 {
 
 form {
   position: relative;
-  right: -14%;
+  right: -5%;
   margin-top: 1%;
+}
+
+footer {
+  padding-left: 20%;
+  text-align: center;
+  border-top: solid $base-black 6px;
 }
