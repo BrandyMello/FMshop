@@ -9,7 +9,7 @@ const Frame = () => {
   
     return (
       <header>
-        <img src={ Logo } alt=''/>
+        <img src={ Logo } alt='' className='logo'/>
         <h1>Farmers' Market Shop</h1>
         <p>Apparently we had reached a great h</p>
       </header>
