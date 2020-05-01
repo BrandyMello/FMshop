@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/FarmersMarketShopLogo-Beet1.jpeg";
 import "./Frame.scss";
 import '../App/App.scss';
+import { GoSearch } from "react-icons/go";
 
 
 
@@ -13,8 +14,8 @@ const Frame = () => {
           <img src={ Logo } alt='' className='logo'/>
           <h1>Farmers' Market Shop</h1>
           <form>
-            <input type='text'/>
-            {/* <img /> */}
+            <input type='text' className='search'/>
+            <GoSearch className='searchIcon'/>
           </form>
         </header>
         <nav>
