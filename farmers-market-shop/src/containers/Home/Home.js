@@ -1,6 +1,6 @@
 import React from "react";
 import VideoCover from '../../assets/fmsHomeImg.jpg';
-import '../Home/Home.scss';
+// import '../Home/Home.scss';
 
 const Home = () => {
   return (

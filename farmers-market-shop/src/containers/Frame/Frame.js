@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/FarmersMarketShopLogo-Beet1.jpeg";
-import "./Frame.scss";
+// import "./Frame.scss";
 import Home from '../Home/Home';
 import { GoSearch } from "react-icons/go";
 import { MdCopyright } from 'react-icons/md';
