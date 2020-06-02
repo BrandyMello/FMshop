@@ -12,7 +12,7 @@ const Frame = () => {
     return (
       <>
         <header>
-          <img src={ Logo } alt='' className='logo'/>
+          <img src={ Logo } alt='logo' className='logo'/>
           <h1>Farmers' Market Shop</h1>
           <form>
             <input type='text' className='search'/>
