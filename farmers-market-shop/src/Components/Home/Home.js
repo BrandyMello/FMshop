@@ -82,6 +82,7 @@ const Home = () => {
           placeholder="80210"
           className="home__form--input"
         />
+        <button type="submit">Let's GO!</button>
       </form>
     </section>
   );
