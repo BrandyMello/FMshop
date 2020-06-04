@@ -1,17 +1,18 @@
 .search {
   border-radius: 3%;
   border-radius: 13px;
-  height: 16px;
+  height: 3rem;
+  width: 20rem;
 }
 
 .searchIcon {
   position: relative;
-  left: -26px;
-  top: 4px;
+  left: -18px;
+  top: 1rem;
 }
 
 form {
-  position: relative;
-  right: -5%;
-  margin-top: 1%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
 }

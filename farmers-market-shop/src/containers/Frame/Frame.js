@@ -12,12 +12,13 @@ const Frame = () => {
     return (
       <>
         <header>
-          <img src={ Logo } alt='logo' className='logo'/>
-          <h1>Farmers' Market Shop</h1>
+          <img src={Logo} alt="logo" className="logo" />
+          <div className="element" id="element"></div>
           <form>
-            <input type='text' className='search'/>
-            <GoSearch className='searchIcon'/>
+            <input type="text" className="search" />
+            <GoSearch className="searchIcon" />
           </form>
+          <h1>Farmers' Market Shop</h1>
         </header>
         <nav>
           <h3>Wholesale</h3>
@@ -28,7 +29,10 @@ const Frame = () => {
           <Home />
         </main>
         <footer>
-          <p><MdCopyright />VelvetPlaidProductions</p>
+          <p>
+            <MdCopyright />
+            VelvetPlaidProductions
+          </p>
         </footer>
       </>
     );

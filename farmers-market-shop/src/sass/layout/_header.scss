@@ -2,5 +2,14 @@ nav {
   display: flex;
   justify-content: space-evenly;
   margin-left: 20%;
-  border-bottom: solid 6px $base-green;
+  border-bottom: solid 10px $base-green;
+  padding-bottom: 6px;
+}
+
+header {
+  height: 21rem;
+
+  h1 {
+    padding-top: 4rem;
+  }
 }
