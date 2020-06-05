@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
-import Frame from '../Frame/Frame'
+import Header from "../Header/Header";
+import Home from "../Home/Home";
+import Footer from "../Footer/Footer";
+
 
 class App extends Component {
-  constructor() {
-    super();
-  }
+  
 
   render() {
     return (
-      <Frame />
-    )
+      <>
+        <Header />
+        <main>
+          <Home />
+        </main>
+        <Footer />
+      </>
+    );
   }
 }
 
