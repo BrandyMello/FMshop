@@ -1,22 +1,8 @@
 import React, { Component } from "react";
 import VideoCover from '../../assets/fmsHomeImg.jpg';
 
-
-  class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      selectedState: '',
-      zipcode: ''
-    }
-  }
-
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });  
-  }
-
-  render() {
-    console.log(this.state);
+  const Home = ({handleChange, selectedState, zipcode}) => {
+    
     return (
       <section className="home">
         <p className="home__text">
@@ -36,8 +22,8 @@ import VideoCover from '../../assets/fmsHomeImg.jpg';
             id="states"
             className="home__form--dropdown"
             selected="selected"
-            value={this.state.selectedState}
-            onChange={this.handleChange}
+            value={selectedState}
+            onChange={handleChange}
           >
             <option value="">Select a State</option>
             <option value="AL">Alabama</option>
@@ -100,14 +86,13 @@ import VideoCover from '../../assets/fmsHomeImg.jpg';
             type="text"
             placeholder="80210"
             className="home__form--input"
-            value={this.state.zipcode}
-            onChange={this.handleChange}
+            value={zipcode}
+            onChange={handleChange}
           />
           <button type="submit">Let's GO!</button>
         </form>
       </section>
     );
-  }
   
 }
 
