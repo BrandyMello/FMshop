@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import VideoCover from '../../assets/fmsHomeImg.jpg';
-// import '../Home/Home.scss';
 
-class Home extends Component {
+
+  class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -12,13 +12,11 @@ class Home extends Component {
   }
 
   handleChange = (e) => {
-    console.log(e.target.value);
-    console.log(e.target.name);
     this.setState({ [e.target.name]: e.target.value });  
   }
 
   render() {
-    console.log(this.state.selectedState);
+    console.log(this.state);
     return (
       <section className="home">
         <p className="home__text">
@@ -102,6 +100,8 @@ class Home extends Component {
             type="text"
             placeholder="80210"
             className="home__form--input"
+            value={this.state.zipcode}
+            onChange={this.handleChange}
           />
           <button type="submit">Let's GO!</button>
         </form>
