@@ -11,7 +11,7 @@ const Header = () => {
           <img src={Logo} alt="logo" className="logo" />
           <div className="element" id="element"></div>
           <form>
-            <input type="text" className="search" />
+            <input type="text" className="u-sytle-input u-search" />
             <GoSearch className="searchIcon" />
           </form>
           <h1>Farmers' Market Shop</h1>
@@ -22,7 +22,7 @@ const Header = () => {
           </nav>
         </header>
       </>
-    )
+    );
 }
 
 export default Header;

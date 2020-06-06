@@ -6,7 +6,6 @@
 
   &__text {
     margin: 2rem auto;
-    // font-size: 2rem;
     width: 45%;
     text-align: center;
   }
@@ -17,21 +16,33 @@
   }
 
   &__form {
-    margin: 0 auto;
+    margin: 2rem auto;
 
-    &--dropdown {
-      border-radius: 3%;
-      border-radius: 13px;
-      margin: 2rem auto;
-      height: 3rem;
-      width: 20rem; //mixin or utility for search as well
+    &--text {
+      font-size: 1.8rem;
+      color: $base-red;
+      margin-right: 2rem;
     }
 
-    &--label{
-    } 
-    
+    &--dropdown {
+      width: $input-width;
+      margin: 0 auto;
+      margin-right: 2rem;
+    }
+
     &--input {
-      height: 4rem;
+      margin-right: 2rem;
+      width: $input-width;
+    }
+
+    &--btn {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-right: 2rem;
+      text-transform: uppercase;
+      color: $base-red;
+      background-color: transparent;
+      border: none;
     }
   }
 }

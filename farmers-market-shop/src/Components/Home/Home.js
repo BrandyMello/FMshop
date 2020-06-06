@@ -20,12 +20,12 @@ import VideoCover from '../../assets/fmsHomeImg.jpg';
           <select
             name="selectedState"
             id="states"
-            className="home__form--dropdown"
+            className="home__form--dropdown u-sytle-input u-dropdown-style"
             selected="selected"
             value={selectedState}
             onChange={handleChange}
           >
-            <option value="">Select a State</option>
+            <option value="">State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -78,18 +78,17 @@ import VideoCover from '../../assets/fmsHomeImg.jpg';
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>
-          <label name="zipcode" className="home__form--label">
-            Zip Code
-          </label>
           <input
             name="zipcode"
             type="text"
-            placeholder="80210"
-            className="home__form--input"
+            placeholder=" 80210"
+            className="home__form--input u-sytle-input"
             value={zipcode}
             onChange={handleChange}
           />
-          <button type="submit">Let's GO!</button>
+          <button type="submit" className="home__form--btn">
+            GO!
+          </button>
         </form>
       </section>
     );
