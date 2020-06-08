@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Home from "../Home/Home";
 import Footer from "../Footer/Footer";
 import StateMarkets from "../StateMarkets/StateMarkets";
+import MarketsByZip from "../MarketsByZip/MarketsByZip";
 
 
 class App extends Component {
@@ -11,7 +12,8 @@ class App extends Component {
     this.state = {
       selectedState: this.selectedState,
       zipcode: this.zipcode,
-      locationSubmitted: false
+      stateSubmitted: false,
+      zipSubmitted: false
     };
   }
 
@@ -21,9 +23,9 @@ class App extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state)
-    this.setState({ locationSubmitted: !this.state.locationSubmitted });
-    console.log(this.state);
+    this.state.zipcode
+      ? this.setState({ zipSubmitted: !this.state.zipSubmitted })
+      : this.setState({ stateSubmitted: !this.state.stateSubmitted });
   }
 
   render() {
@@ -33,14 +35,17 @@ class App extends Component {
       <>
         <Header />
         <main>
-          {!this.state.locationSubmitted && <Home 
+          {!this.state.stateSubmitted && !this.state.zipSubmitted && <Home 
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
             selectedState={this.state.selectedState}
             zipcode={this.state.zipcode}
           />}
-          {this.state.locationSubmitted && <StateMarkets 
-          selectedState={this.state.selectedState}
+          {this.state.stateSubmitted && <StateMarkets 
+            selectedState={this.state.selectedState}
+          />}
+          {this.state.zipSubmitted && <MarketsByZip 
+            zipcode={this.state.zipcode}
           />}
         </main>
         <Footer />
